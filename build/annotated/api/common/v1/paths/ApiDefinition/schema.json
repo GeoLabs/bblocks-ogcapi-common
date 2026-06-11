@@ -1,0 +1,25 @@
+{
+  "get": {
+    "summary": "This document",
+    "description": "This document",
+    "tags": [
+      "server"
+    ],
+    "parameters": [
+      {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.json"
+      }
+    ],
+    "responses": {
+      "200": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ApiDefinition/schema.json"
+      },
+      "400": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.json"
+      },
+      "default": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.json"
+      }
+    }
+  }
+}

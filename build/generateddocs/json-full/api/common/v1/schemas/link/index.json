@@ -1,0 +1,36 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.schemas.link",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "link",
+    "schema"
+  ],
+  "name": "Link",
+  "abstract": "This building block corresponds to the link schema from OGC API - Common - Part 1: Core",
+  "itemClass": "schema",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/link/schema.yaml",
+  "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/resolvedProperties.json",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/link/",
+  "validationPassed": true,
+  "annotatedSchema": "type: object\nrequired:\n- href\n- rel\nproperties:\n  href:\n    type: string\n    description: Supplies the URI to a remote resource (or resource fragment).\n    example: http://data.example.com/buildings/123\n  rel:\n    type: string\n    description: The type or semantics of the relation.\n    example: alternate\n  type:\n    type: string\n    description: A hint indicating what the media type of the result of dereferencing\n      the link should be.\n    example: application/geo+json\n  hreflang:\n    type: string\n    description: A hint indicating what the language of the result of dereferencing\n      the link should be.\n    example: en\n  title:\n    type: string\n    description: Used to label the destination of a link such that it can be used\n      as a human-readable identifier.\n    example: Trierer Strasse 70, 53115 Bonn\n  length:\n    type: integer\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/schemas/link"
+}

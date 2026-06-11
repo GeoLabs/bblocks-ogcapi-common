@@ -1,0 +1,1319 @@
+{
+  "@context": [
+    {
+      "@base": "https://geolabs.github.io/bblocks-ogcapi-common"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
+      "void": "http://rdfs.org/ns/void#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "role": "http://www.w3.org/ns/dx/prof/role/",
+      "shacl": "https://www.w3.org/TR/shacl/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": {
+        "@id": "dct:abstract",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "description": {
+        "@id": "dct:description",
+        "@type": "https://www.w3.org/ns/iana/media-types/text/markdown"
+      },
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "modified": {
+        "@id": "dct:modified",
+        "@type": "xsd:dateTime"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "schema": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "ldContext": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+          }
+        }
+      },
+      "rdfs:isDefinedBy": {
+        "@type": "@id"
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "isProfileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclShapes": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "validationPassed": "bblocks:validationPassed",
+      "imports": {
+        "@id": "owl:imports",
+        "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
+      },
+      "requirementClasses": {
+        "@id": "modspec:requirementsClass",
+        "@type": "@id"
+      },
+      "sparqlEndpoint": {
+        "@id": "void:sparqlEndpoint",
+        "@type": "@id"
+      },
+      "viewerURL": {
+        "@id": "foaf:homepage",
+        "@type": "@id"
+      },
+      "dct:conformsTo": {
+        "@type": "@id"
+      },
+      "prof:hasRole": {
+        "@type": "@id"
+      },
+      "prof:hasArtifact": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "ontology": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "rdfData": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "links": {
+        "@id": "prof:hasResource",
+        "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
+      },
+      "concept": {
+        "@id": "skos:closeMatch",
+        "@type": "@id"
+      },
+      "rdfType": {
+        "@id": "rdfs:subClassOf",
+        "@type": "@id"
+      },
+      "resources": {
+        "@id": "prof:hasResource",
+        "@context": {
+          "role": {
+            "@id": "prof:hasRole",
+            "@type": "@id"
+          },
+          "constraints": "role:constraints",
+          "example": "role:example",
+          "guidance": "role:guidance",
+          "mapping": "role:mapping",
+          "schema": "role:schema",
+          "specification": "role:specification",
+          "validation": "role:validation",
+          "vocabulary": "role:vocabulary",
+          "data": "role:data",
+          "ref": {
+            "@id": "prof:hasArtifact",
+            "@type": "@id"
+          },
+          "format": "dct:format",
+          "conformsTo": {
+            "@id": "dct:conformsTo",
+            "@type": "@id"
+          }
+        }
+      }
+    }
+  ],
+  "name": "Building Blocks - OGC API Common",
+  "abstract": "Schemas for the OGC API - Common - Part 1: Core standard\n",
+  "description": "Adds a flexible, JSON schema version agnostic documentation to the OGC API - Common - Part 1: Core standard, \nsupporting further profiling by combining with other Building Blocks.\n\nThis includes:\n- Landing Page (/)\n- Conformance Declaration (/conformance)\n- API Definition (/api)\n- Common response formats (JSON, HTML)\n- Common schemas (links, exceptions, etc.)\n",
+  "modified": "2026-06-11T16:35:57.951701",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"3d439a60dc207abd30b00f9035928160fab87110",
+      "shortCommitId": "\"3d439a",
+      "date": "2026-06-07T12:34:37+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitHubRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common/blob/master/",
+  "baseURL": "https://geolabs.github.io/bblocks-ogcapi-common/",
+  "viewerURL": "https://geolabs.github.io/bblocks-ogcapi-common/",
+  "validationReport": "https://geolabs.github.io/bblocks-ogcapi-common/build/tests/report.html",
+  "validationReportJson": "https://geolabs.github.io/bblocks-ogcapi-common/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "remoteCacheDir": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://geolabs.github.io/bblocks-ogcapi-common/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://geolabs.github.io/bblocks-ogcapi-common/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://geolabs.github.io/bblocks-ogcapi-common/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ],
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog",
+    "bblocks:BBlocksRegister"
+  ],
+  "skos:prefLabel": "Building Blocks - OGC API Common",
+  "hasConcepts": [
+    {
+      "itemIdentifier": "ogc.api.common.v1.parameters.f-openapi",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "parameter",
+        "format"
+      ],
+      "name": "Format Parameter (OpenAPI)",
+      "abstract": "This building block corresponds to the format parameter for requesting OpenAPI formats",
+      "itemClass": "parameter",
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/parameters/f-openapi/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/parameters/f-openapi/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/parameters/f-openapi/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/parameters/f-openapi/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.parameters.f-openapi"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.parameters.f-openapi",
+      "@type": [
+        "bblocks:Parameter",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Format Parameter (OpenAPI)",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.responses.ApiDefinition",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "api-definition",
+        "response"
+      ],
+      "name": "API Definition Response",
+      "abstract": "This building block corresponds to the API definition response from OGC API - Common - Part 1: Core",
+      "itemClass": "response",
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ApiDefinition/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ApiDefinition/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ApiDefinition/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ApiDefinition/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ApiDefinition/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ApiDefinition/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ApiDefinition"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.responses.ApiDefinition",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "API Definition Response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.schemas.confClasses",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "conformance",
+        "schema"
+      ],
+      "name": "Conformance Classes",
+      "abstract": "This building block corresponds to the conformance declaration schema from OGC API - Common - Part 1: Core",
+      "itemClass": "schema",
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/confClasses/schema.yaml",
+      "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/resolvedProperties.json",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/confClasses/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/confClasses/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/confClasses/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.confClasses"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.schemas.confClasses",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Conformance Classes",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.schemas.exception",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "exception",
+        "schema"
+      ],
+      "name": "Exception",
+      "abstract": "This building block corresponds to the exception schema from OGC API - Common - Part 1: Core",
+      "itemClass": "schema",
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/exception/schema.yaml",
+      "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/resolvedProperties.json",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/exception/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/exception/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/exception/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.exception"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.schemas.exception",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Exception",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.schemas.link",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "link",
+        "schema"
+      ],
+      "name": "Link",
+      "abstract": "This building block corresponds to the link schema from OGC API - Common - Part 1: Core",
+      "itemClass": "schema",
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/link/schema.yaml",
+      "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/resolvedProperties.json",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/link/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/link/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/link/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.link"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.schemas.link",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Link",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.responses.ConformanceDeclaration",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "conformance",
+        "response"
+      ],
+      "name": "Conformance Declaration Response",
+      "abstract": "This building block corresponds to the conformance declaration response from OGC API - Common - Part 1: Core",
+      "itemClass": "response",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.schemas.confClasses"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ConformanceDeclaration/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ConformanceDeclaration/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ConformanceDeclaration/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ConformanceDeclaration/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ConformanceDeclaration"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.responses.ConformanceDeclaration",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Conformance Declaration Response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.responses.InvalidParameter",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "error",
+        "response"
+      ],
+      "name": "Invalid Parameter Response",
+      "abstract": "This building block corresponds to the invalid parameter response (400) from OGC API - Common - Part 1: Core",
+      "itemClass": "response",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.schemas.exception"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/InvalidParameter/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/InvalidParameter/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/InvalidParameter/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/InvalidParameter/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.InvalidParameter"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.responses.InvalidParameter",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Invalid Parameter Response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.responses.ServerError",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "error",
+        "response"
+      ],
+      "name": "Server Error Response",
+      "abstract": "This building block corresponds to the server error response (500) from OGC API - Common - Part 1: Core",
+      "itemClass": "response",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.schemas.exception"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ServerError/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ServerError/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ServerError/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ServerError/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ServerError"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.responses.ServerError",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Server Error Response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.schemas.landingPage",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "landing-page",
+        "schema"
+      ],
+      "name": "Landing Page",
+      "abstract": "This building block corresponds to the landing page schema from OGC API - Common - Part 1: Core",
+      "itemClass": "schema",
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.schemas.link"
+      ],
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/landingPage/schema.yaml",
+      "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/resolvedProperties.json",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/landingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/landingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/landingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.landingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.schemas.landingPage",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Landing Page",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.paths.ApiDefinition",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        },
+        {
+          "title": "OGC API - Common - Part 1: Core - OpenAPI 3.0 Requirements Class",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html#_ab6e3c2d-d2dc-4f01-a7d4-8b52133289a0"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "api-definition",
+        "path"
+      ],
+      "name": "API Definition Path",
+      "abstract": "This building block corresponds to the API definition path (/api) from OGC API - Common - Part 1: Core",
+      "itemClass": "path",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.responses.ServerError",
+        "bblocks://ogc.api.common.v1.responses.ApiDefinition",
+        "bblocks://ogc.api.common.v1.parameters.f-openapi",
+        "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/ApiDefinition/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/ApiDefinition/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/ApiDefinition/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/ApiDefinition/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/ApiDefinition/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/ApiDefinition/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.ApiDefinition"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.paths.ApiDefinition",
+      "@type": [
+        "bblocks:Path",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "API Definition Path",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.paths.Conformance",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        },
+        {
+          "title": "OGC API - Common - Part 1: Core - Landing Page Requirements Class",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html#_addb3c12-4aef-46cb-a6d9-834883ebed97"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "conformance",
+        "path"
+      ],
+      "name": "Conformance Path",
+      "abstract": "This building block corresponds to the conformance declaration path (/conformance) from OGC API - Common - Part 1: Core",
+      "itemClass": "path",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.responses.ServerError",
+        "bblocks://ogc.api.common.v1.responses.ConformanceDeclaration",
+        "bblocks://ogc.api.common.v1.parameters.f-openapi",
+        "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/Conformance/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/Conformance/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/Conformance/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/Conformance/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.Conformance"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.paths.Conformance",
+      "@type": [
+        "bblocks:Path",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Conformance Path",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.responses.LandingPage",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "landing-page",
+        "response"
+      ],
+      "name": "Landing Page Response",
+      "abstract": "This building block corresponds to the landing page response from OGC API - Common - Part 1: Core",
+      "itemClass": "response",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.schemas.landingPage"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/LandingPage/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/LandingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/LandingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/LandingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.LandingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.responses.LandingPage",
+      "@type": [
+        "bblocks:Response",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Landing Page Response",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.paths.LandingPage",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00.000000",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        },
+        {
+          "title": "OGC API - Common - Part 1: Core - Landing Page Requirements Class",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html#_65d42b57-7d32-4f4e-963b-ba0d4f190f27"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "landing-page",
+        "path"
+      ],
+      "name": "Landing Page Path",
+      "abstract": "This building block corresponds to the landing page path (/) from OGC API - Common - Part 1: Core",
+      "itemClass": "path",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.responses.ServerError",
+        "bblocks://ogc.api.common.v1.parameters.f-openapi",
+        "bblocks://ogc.api.common.v1.responses.LandingPage",
+        "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/LandingPage/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/LandingPage/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/LandingPage/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/LandingPage/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/LandingPage/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/LandingPage/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.LandingPage"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.paths.LandingPage",
+      "@type": [
+        "bblocks:Path",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Landing Page Path",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.common.v1.api",
+      "name": "OGC API - Common: Part 1 - Core",
+      "status": "under-development",
+      "dateTimeAddition": "2026-01-06T00:00:00+00:00",
+      "itemClass": "api",
+      "register": "ogcapi-common",
+      "version": "0.1",
+      "dateOfLastChange": "2026-06-11",
+      "sources": [
+        {
+          "title": "OGC API - Common - Part 1: Core",
+          "link": "https://docs.ogc.org/is/19-072/19-072.html"
+        }
+      ],
+      "tags": [
+        "ogcapi-common",
+        "ogcapi",
+        "api"
+      ],
+      "highlighted": true,
+      "abstract": "This building block corresponds to OGC API - Common - Part 1: Core, defining the fundamental building blocks common to all OGC API standards",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.common.v1.paths.LandingPage",
+        "bblocks://ogc.api.common.v1.paths.ApiDefinition",
+        "bblocks://ogc.api.common.v1.paths.Conformance"
+      ],
+      "sourceOpenAPIDocument": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/api/openapi.yaml",
+      "openAPIDocument": {
+        "prof:hasArtifact": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/api/openapi.yaml",
+        "prof:hasRole": "role:schema",
+        "dct:format": "application/yaml",
+        "dct:conformsTo": "https://spec.openapis.org/oas/v3.1.0.html"
+      },
+      "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/api/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/api/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/api/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.api"
+        }
+      },
+      "@id": "bblocks://ogc.api.common.v1.api",
+      "@type": [
+        "bblocks:Api",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "OGC API - Common: Part 1 - Core",
+      "ldContext": null,
+      "schema": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://geolabs.github.io/bblocks-ogcapi-common/"
+      }
+    }
+  ],
+  "skos:hasTopConcept": [
+    {
+      "@id": "bblocks://ogc.api.common.v1.parameters.f-openapi"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.responses.ApiDefinition"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.schemas.confClasses"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.schemas.exception"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.schemas.link"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.responses.ConformanceDeclaration"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.responses.ServerError"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.schemas.landingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.paths.ApiDefinition"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.paths.Conformance"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.responses.LandingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.paths.LandingPage"
+    },
+    {
+      "@id": "bblocks://ogc.api.common.v1.api"
+    }
+  ]
+}

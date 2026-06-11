@@ -1,0 +1,26 @@
+{
+  "get": {
+    "summary": "Landing page",
+    "description": "The landing page provides links to the API definition and the conformance statements for this API.",
+    "operationId": "getLandingPage",
+    "tags": [
+      "server"
+    ],
+    "parameters": [
+      {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.json"
+      }
+    ],
+    "responses": {
+      "200": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.json"
+      },
+      "400": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.json"
+      },
+      "500": {
+        "$ref": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.json"
+      }
+    }
+  }
+}

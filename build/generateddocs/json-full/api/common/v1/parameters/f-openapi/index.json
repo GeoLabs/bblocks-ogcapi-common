@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.parameters.f-openapi",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "parameter",
+    "format"
+  ],
+  "name": "Format Parameter (OpenAPI)",
+  "abstract": "This building block corresponds to the format parameter for requesting OpenAPI formats",
+  "itemClass": "parameter",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/parameters/f-openapi/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/parameters/f-openapi/",
+  "validationPassed": true,
+  "annotatedSchema": "name: f\nin: query\ndescription: The optional f parameter indicates the output format that the server\n  shall provide as part of the response document. The default format is JSON.\nexplode: false\nrequired: false\nstyle: form\nschema:\n  type: string\n  default: json\n  enum:\n  - json\n  - html\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/parameters/f-openapi"
+}

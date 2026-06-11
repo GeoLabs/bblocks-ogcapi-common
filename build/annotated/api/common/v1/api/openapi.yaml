@@ -1,0 +1,28 @@
+openapi: 3.0.2
+info:
+  title: 'Building Blocks specified in OGC API - Common - Part 1: Core'
+  description: 'Common components used in the
+
+    [OGC standard "OGC API - Common - Part 1: Core"](http://docs.opengeospatial.org/is/19-072/19-072.html).
+
+
+    OGC API - Common - Part 1: Core 1.0 is an OGC Standard.
+
+    Copyright (c) 2021 Open Geospatial Consortium.
+
+    To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+    .'
+  version: 1.0.0
+  contact:
+    name: Open Geospatial Consortium
+    email: standards-team@ogc.org
+  license:
+    name: OGC License
+    url: http://www.opengeospatial.org/legal/
+paths:
+  /:
+    $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/LandingPage/schema.yaml
+  /conformance:
+    $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.yaml
+  /api:
+    $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/ApiDefinition/schema.yaml

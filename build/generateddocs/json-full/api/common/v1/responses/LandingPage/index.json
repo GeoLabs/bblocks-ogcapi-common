@@ -1,0 +1,38 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.responses.LandingPage",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "landing-page",
+    "response"
+  ],
+  "name": "Landing Page Response",
+  "abstract": "This building block corresponds to the landing page response from OGC API - Common - Part 1: Core",
+  "itemClass": "response",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.common.v1.schemas.landingPage"
+  ],
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/LandingPage/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/LandingPage/",
+  "validationPassed": true,
+  "annotatedSchema": "description: 'The landing page provides links to the API definition\n\n  (link relations `service-desc` and `service-doc`),\n\n  and the Conformance declaration (path `/conformance`,\n\n  link relation `conformance`).'\ncontent:\n  application/json:\n    schema:\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.yaml\n  text/html:\n    schema:\n      type: string\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/responses/LandingPage"
+}

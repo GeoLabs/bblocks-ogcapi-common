@@ -1,0 +1,206 @@
+{
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "ogc.api.common.v1.parameters.f-openapi": {
+      "title": "Validation report for ogc.api.common.v1.parameters.f-openapi - Format Parameter (OpenAPI)",
+      "bblockName": "Format Parameter (OpenAPI)",
+      "bblockId": "ogc.api.common.v1.parameters.f-openapi",
+      "generated": "2026-06-11T16:35:58.433646+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.responses.ApiDefinition": {
+      "title": "Validation report for ogc.api.common.v1.responses.ApiDefinition - API Definition Response",
+      "bblockName": "API Definition Response",
+      "bblockId": "ogc.api.common.v1.responses.ApiDefinition",
+      "generated": "2026-06-11T16:35:58.437160+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.schemas.confClasses": {
+      "title": "Validation report for ogc.api.common.v1.schemas.confClasses - Conformance Classes",
+      "bblockName": "Conformance Classes",
+      "bblockId": "ogc.api.common.v1.schemas.confClasses",
+      "generated": "2026-06-11T16:35:58.441628+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.schemas.exception": {
+      "title": "Validation report for ogc.api.common.v1.schemas.exception - Exception",
+      "bblockName": "Exception",
+      "bblockId": "ogc.api.common.v1.schemas.exception",
+      "generated": "2026-06-11T16:35:58.446995+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.schemas.link": {
+      "title": "Validation report for ogc.api.common.v1.schemas.link - Link",
+      "bblockName": "Link",
+      "bblockId": "ogc.api.common.v1.schemas.link",
+      "generated": "2026-06-11T16:35:58.452346+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.responses.ConformanceDeclaration": {
+      "title": "Validation report for ogc.api.common.v1.responses.ConformanceDeclaration - Conformance Declaration Response",
+      "bblockName": "Conformance Declaration Response",
+      "bblockId": "ogc.api.common.v1.responses.ConformanceDeclaration",
+      "generated": "2026-06-11T16:35:58.456261+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.responses.InvalidParameter": {
+      "title": "Validation report for ogc.api.common.v1.responses.InvalidParameter - Invalid Parameter Response",
+      "bblockName": "Invalid Parameter Response",
+      "bblockId": "ogc.api.common.v1.responses.InvalidParameter",
+      "generated": "2026-06-11T16:35:58.459799+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.responses.ServerError": {
+      "title": "Validation report for ogc.api.common.v1.responses.ServerError - Server Error Response",
+      "bblockName": "Server Error Response",
+      "bblockId": "ogc.api.common.v1.responses.ServerError",
+      "generated": "2026-06-11T16:35:58.463188+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.schemas.landingPage": {
+      "title": "Validation report for ogc.api.common.v1.schemas.landingPage - Landing Page",
+      "bblockName": "Landing Page",
+      "bblockId": "ogc.api.common.v1.schemas.landingPage",
+      "generated": "2026-06-11T16:35:58.468252+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.paths.ApiDefinition": {
+      "title": "Validation report for ogc.api.common.v1.paths.ApiDefinition - API Definition Path",
+      "bblockName": "API Definition Path",
+      "bblockId": "ogc.api.common.v1.paths.ApiDefinition",
+      "generated": "2026-06-11T16:35:58.472489+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.paths.Conformance": {
+      "title": "Validation report for ogc.api.common.v1.paths.Conformance - Conformance Path",
+      "bblockName": "Conformance Path",
+      "bblockId": "ogc.api.common.v1.paths.Conformance",
+      "generated": "2026-06-11T16:35:58.476080+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.responses.LandingPage": {
+      "title": "Validation report for ogc.api.common.v1.responses.LandingPage - Landing Page Response",
+      "bblockName": "Landing Page Response",
+      "bblockId": "ogc.api.common.v1.responses.LandingPage",
+      "generated": "2026-06-11T16:35:58.479438+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.paths.LandingPage": {
+      "title": "Validation report for ogc.api.common.v1.paths.LandingPage - Landing Page Path",
+      "bblockName": "Landing Page Path",
+      "bblockId": "ogc.api.common.v1.paths.LandingPage",
+      "generated": "2026-06-11T16:35:58.483011+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.common.v1.api": {
+      "title": "Validation report for ogc.api.common.v1.api - OGC API - Common: Part 1 - Core",
+      "bblockName": "OGC API - Common: Part 1 - Core",
+      "bblockId": "ogc.api.common.v1.api",
+      "generated": "2026-06-11T16:35:58.485573+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    }
+  }
+}

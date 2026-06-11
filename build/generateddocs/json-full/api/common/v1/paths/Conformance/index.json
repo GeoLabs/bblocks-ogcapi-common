@@ -1,0 +1,45 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.paths.Conformance",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    },
+    {
+      "title": "OGC API - Common - Part 1: Core - Landing Page Requirements Class",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html#_addb3c12-4aef-46cb-a6d9-834883ebed97"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "conformance",
+    "path"
+  ],
+  "name": "Conformance Path",
+  "abstract": "This building block corresponds to the conformance declaration path (/conformance) from OGC API - Common - Part 1: Core",
+  "itemClass": "path",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.common.v1.responses.ServerError",
+    "ogc.api.common.v1.responses.ConformanceDeclaration",
+    "ogc.api.common.v1.parameters.f-openapi",
+    "ogc.api.common.v1.responses.InvalidParameter"
+  ],
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/Conformance/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/paths/Conformance/",
+  "validationPassed": true,
+  "annotatedSchema": "get:\n  summary: API conformance definition\n  description: A list of all conformance classes specified in a standard that the\n    server conforms to.\n  operationId: getConformanceDeclaration\n  tags:\n  - server\n  parameters:\n  - $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.yaml\n  responses:\n    '200':\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.yaml\n    '400':\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.yaml\n    '500':\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.yaml\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/paths/Conformance"
+}

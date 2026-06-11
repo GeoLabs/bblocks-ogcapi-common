@@ -1,0 +1,36 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.schemas.exception",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "exception",
+    "schema"
+  ],
+  "name": "Exception",
+  "abstract": "This building block corresponds to the exception schema from OGC API - Common - Part 1: Core",
+  "itemClass": "schema",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/exception/schema.yaml",
+  "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/resolvedProperties.json",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/exception/",
+  "validationPassed": true,
+  "annotatedSchema": "title: Exception Schema\ndescription: JSON schema for exceptions based on RFC 7807\ntype: object\nrequired:\n- type\nproperties:\n  type:\n    type: string\n  title:\n    type: string\n  status:\n    type: integer\n  detail:\n    type: string\n  instance:\n    type: string\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/schemas/exception"
+}

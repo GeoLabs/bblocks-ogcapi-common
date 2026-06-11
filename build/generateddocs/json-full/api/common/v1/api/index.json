@@ -1,0 +1,38 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.api",
+  "name": "OGC API - Common: Part 1 - Core",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00+00:00",
+  "itemClass": "api",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "ogcapi",
+    "api"
+  ],
+  "highlighted": true,
+  "abstract": "This building block corresponds to OGC API - Common - Part 1: Core, defining the fundamental building blocks common to all OGC API standards",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.common.v1.paths.LandingPage",
+    "ogc.api.common.v1.paths.ApiDefinition",
+    "ogc.api.common.v1.paths.Conformance"
+  ],
+  "sourceOpenAPIDocument": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/api/openapi.yaml",
+  "openAPIDocument": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/api/openapi.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/api/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/api"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "f",
+  "in": "query",
+  "description": "The optional f parameter indicates the output format that the server shall provide as part of the response document. The default format is JSON.",
+  "explode": false,
+  "required": false,
+  "style": "form",
+  "schema": {
+    "type": "string",
+    "default": "json",
+    "enum": [
+      "json",
+      "html"
+    ]
+  }
+}

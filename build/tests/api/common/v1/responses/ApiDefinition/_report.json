@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.common.v1.responses.ApiDefinition - API Definition Response",
+  "bblockName": "API Definition Response",
+  "bblockId": "ogc.api.common.v1.responses.ApiDefinition",
+  "generated": "2026-06-11T16:35:58.437160+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

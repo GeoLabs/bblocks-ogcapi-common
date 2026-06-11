@@ -1,0 +1,39 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.schemas.landingPage",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "landing-page",
+    "schema"
+  ],
+  "name": "Landing Page",
+  "abstract": "This building block corresponds to the landing page schema from OGC API - Common - Part 1: Core",
+  "itemClass": "schema",
+  "dependsOn": [
+    "ogc.api.common.v1.schemas.link"
+  ],
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/landingPage/schema.yaml",
+  "resolvedSchemaProperties": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/resolvedProperties.json",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/schemas/landingPage/",
+  "validationPassed": true,
+  "annotatedSchema": "type: object\nrequired:\n- links\nproperties:\n  title:\n    type: string\n    title: The title of the API.\n    description: While a title is not required, implementers are strongly advised\n      to include one.\n    example: Buildings in Bonn\n  description:\n    type: string\n    example: Access to data about buildings in the city of Bonn via a Web API that\n      conforms to the OGC API Common specification.\n  attribution:\n    type: string\n    title: attribution for the API\n    description: The `attribution` should be short and intended for presentation to\n      a user, for example, in a corner of a map. Parts of the text can be links to\n      other resources if additional information is needed. The string can include\n      HTML markup.\n  links:\n    type: array\n    items:\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.yaml\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/schemas/landingPage"
+}

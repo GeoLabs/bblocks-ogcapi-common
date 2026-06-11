@@ -1,0 +1,569 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<bblocks://ogc.api.common.v1.api> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Api,
+        bblocks:BBlock ;
+    rdfs:label "OGC API - Common: Part 1 - Core" ;
+    dct:abstract "This building block corresponds to OGC API - Common - Part 1: Core, defining the fundamental building blocks common to all OGC API standards"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/api/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/api/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.api> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "OGC API - Common: Part 1 - Core" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "api",
+        "ogcapi",
+        "ogcapi-common" ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.paths.ApiDefinition>,
+        <bblocks://ogc.api.common.v1.paths.Conformance>,
+        <bblocks://ogc.api.common.v1.paths.LandingPage> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://docs.ogc.org/is/19-072/19-072.html#_65d42b57-7d32-4f4e-963b-ba0d4f190f27> rdfs:label "OGC API - Common - Part 1: Core - Landing Page Requirements Class" .
+
+<https://docs.ogc.org/is/19-072/19-072.html#_ab6e3c2d-d2dc-4f01-a7d4-8b52133289a0> rdfs:label "OGC API - Common - Part 1: Core - OpenAPI 3.0 Requirements Class" .
+
+<https://docs.ogc.org/is/19-072/19-072.html#_addb3c12-4aef-46cb-a6d9-834883ebed97> rdfs:label "OGC API - Common - Part 1: Core - Landing Page Requirements Class" .
+
+<https://geolabs.github.io/bblocks-ogcapi-common/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N7a604434cc294da79f46200652fb5aa2 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-06-11T16:35:58.768238"^^xsd:dateTime ;
+            prov:startedAtTime "2026-06-11T16:35:58.533963"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:980bf509497de5cd49932e32be4730d8fee4264d" ;
+                    rdfs:seeAlso <https://geolabs.github.io/bblocks-ogcapi-common/build/register.json> ] ;
+            prov:wasAssociatedWith _:N7a604434cc294da79f46200652fb5aa2 ] .
+
+<bblocks://ogc.api.common.v1.paths.ApiDefinition> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Path ;
+    rdfs:label "API Definition Path" ;
+    dct:abstract "This building block corresponds to the API definition path (/api) from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/ApiDefinition/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/ApiDefinition/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.ApiDefinition> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html>,
+        <https://docs.ogc.org/is/19-072/19-072.html#_ab6e3c2d-d2dc-4f01-a7d4-8b52133289a0> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "API Definition Path" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "api-definition",
+        "ogcapi-common",
+        "path" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/ApiDefinition/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/ApiDefinition/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.parameters.f-openapi>,
+        <bblocks://ogc.api.common.v1.responses.ApiDefinition>,
+        <bblocks://ogc.api.common.v1.responses.InvalidParameter>,
+        <bblocks://ogc.api.common.v1.responses.ServerError> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.paths.Conformance> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Path ;
+    rdfs:label "Conformance Path" ;
+    dct:abstract "This building block corresponds to the conformance declaration path (/conformance) from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.Conformance> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/Conformance/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/Conformance/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html>,
+        <https://docs.ogc.org/is/19-072/19-072.html#_addb3c12-4aef-46cb-a6d9-834883ebed97> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Conformance Path" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "conformance",
+        "ogcapi-common",
+        "path" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/Conformance/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.parameters.f-openapi>,
+        <bblocks://ogc.api.common.v1.responses.ConformanceDeclaration>,
+        <bblocks://ogc.api.common.v1.responses.InvalidParameter>,
+        <bblocks://ogc.api.common.v1.responses.ServerError> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.paths.LandingPage> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Path ;
+    rdfs:label "Landing Page Path" ;
+    dct:abstract "This building block corresponds to the landing page path (/) from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.paths.LandingPage> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/paths/LandingPage/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/paths/LandingPage/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html>,
+        <https://docs.ogc.org/is/19-072/19-072.html#_65d42b57-7d32-4f4e-963b-ba0d4f190f27> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Landing Page Path" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "landing-page",
+        "ogcapi-common",
+        "path" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/LandingPage/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/paths/LandingPage/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.parameters.f-openapi>,
+        <bblocks://ogc.api.common.v1.responses.InvalidParameter>,
+        <bblocks://ogc.api.common.v1.responses.LandingPage>,
+        <bblocks://ogc.api.common.v1.responses.ServerError> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.responses.ApiDefinition> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Response ;
+    rdfs:label "API Definition Response" ;
+    dct:abstract "This building block corresponds to the API definition response from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ApiDefinition/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ApiDefinition/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ApiDefinition> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "API Definition Response" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "api-definition",
+        "ogcapi-common",
+        "response" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ApiDefinition/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ApiDefinition/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.responses.ConformanceDeclaration> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Response ;
+    rdfs:label "Conformance Declaration Response" ;
+    dct:abstract "This building block corresponds to the conformance declaration response from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ConformanceDeclaration/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ConformanceDeclaration/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ConformanceDeclaration> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Conformance Declaration Response" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "conformance",
+        "ogcapi-common",
+        "response" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.schemas.confClasses> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.responses.LandingPage> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Response ;
+    rdfs:label "Landing Page Response" ;
+    dct:abstract "This building block corresponds to the landing page response from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/LandingPage/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/LandingPage/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.LandingPage> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Landing Page Response" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "landing-page",
+        "ogcapi-common",
+        "response" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/LandingPage/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.schemas.landingPage> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.schemas.confClasses> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Conformance Classes" ;
+    dct:abstract "This building block corresponds to the conformance declaration schema from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/confClasses/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/confClasses/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.confClasses> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Conformance Classes" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "conformance",
+        "ogcapi-common",
+        "schema" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.schemas.landingPage> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Landing Page" ;
+    dct:abstract "This building block corresponds to the landing page schema from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.landingPage> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/landingPage/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/landingPage/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Landing Page" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "landing-page",
+        "ogcapi-common",
+        "schema" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/landingPage/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.schemas.link> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.schemas.link> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Link" ;
+    dct:abstract "This building block corresponds to the link schema from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/link/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/link/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.link> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Link" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "link",
+        "ogcapi-common",
+        "schema" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/link/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.schemas.exception> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Exception" ;
+    dct:abstract "This building block corresponds to the exception schema from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/schemas/exception/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/schemas/exception/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.schemas.exception> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Exception" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "exception",
+        "ogcapi-common",
+        "schema" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.parameters.f-openapi> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Parameter ;
+    rdfs:label "Format Parameter (OpenAPI)" ;
+    dct:abstract "This building block corresponds to the format parameter for requesting OpenAPI formats"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/parameters/f-openapi/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/parameters/f-openapi/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.parameters.f-openapi> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Format Parameter (OpenAPI)" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "format",
+        "ogcapi-common",
+        "parameter" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/parameters/f-openapi/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.responses.InvalidParameter> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Response ;
+    rdfs:label "Invalid Parameter Response" ;
+    dct:abstract "This building block corresponds to the invalid parameter response (400) from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/InvalidParameter/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.InvalidParameter> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/InvalidParameter/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Invalid Parameter Response" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "error",
+        "ogcapi-common",
+        "response" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/InvalidParameter/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.schemas.exception> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.api.common.v1.responses.ServerError> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Response ;
+    rdfs:label "Server Error Response" ;
+    dct:abstract "This building block corresponds to the server error response (500) from OGC API - Common - Part 1: Core"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-01-06T00:00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/json-full/api/common/v1/responses/ServerError/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/bblock/ogc.api.common.v1.responses.ServerError> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geolabs.github.io/bblocks-ogcapi-common/build/generateddocs/markdown/api/common/v1/responses/ServerError/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-06-11"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/19-072/19-072.html> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    skos:prefLabel "Server Error Response" ;
+    skos:topConceptOf <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    dcat:keyword "error",
+        "ogcapi-common",
+        "response" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ServerError/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.api.common.v1.schemas.exception> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://docs.ogc.org/is/19-072/19-072.html> rdfs:label "OGC API - Common - Part 1: Core" .
+
+<https://geolabs.github.io/bblocks-ogcapi-common/> a skos:ConceptScheme,
+        dcat:Catalog,
+        bblocks:BBlocksRegister ;
+    rdfs:label "Building Blocks - OGC API Common" ;
+    dct:abstract """Schemas for the OGC API - Common - Part 1: Core standard
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """Adds a flexible, JSON schema version agnostic documentation to the OGC API - Common - Part 1: Core standard, 
+supporting further profiling by combining with other Building Blocks.
+
+This includes:
+- Landing Page (/)
+- Conformance Declaration (/conformance)
+- API Definition (/api)
+- Common response formats (JSON, HTML)
+- Common schemas (links, exceptions, etc.)
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2026-06-11T16:35:57.951701"^^xsd:dateTime ;
+    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:hasTopConcept <bblocks://ogc.api.common.v1.api>,
+        <bblocks://ogc.api.common.v1.parameters.f-openapi>,
+        <bblocks://ogc.api.common.v1.paths.ApiDefinition>,
+        <bblocks://ogc.api.common.v1.paths.Conformance>,
+        <bblocks://ogc.api.common.v1.paths.LandingPage>,
+        <bblocks://ogc.api.common.v1.responses.ApiDefinition>,
+        <bblocks://ogc.api.common.v1.responses.ConformanceDeclaration>,
+        <bblocks://ogc.api.common.v1.responses.InvalidParameter>,
+        <bblocks://ogc.api.common.v1.responses.LandingPage>,
+        <bblocks://ogc.api.common.v1.responses.ServerError>,
+        <bblocks://ogc.api.common.v1.schemas.confClasses>,
+        <bblocks://ogc.api.common.v1.schemas.exception>,
+        <bblocks://ogc.api.common.v1.schemas.landingPage>,
+        <bblocks://ogc.api.common.v1.schemas.link> ;
+    skos:prefLabel "Building Blocks - OGC API Common" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://geolabs.github.io/bblocks-ogcapi-common/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://geolabs.github.io/bblocks-ogcapi-common/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://geolabs.github.io/bblocks-ogcapi-common/build/bblocks.ttl> ] ;
+    foaf:homepage <https://geolabs.github.io/bblocks-ogcapi-common/> ;
+    bblocks:hasValidationReport <https://geolabs.github.io/bblocks-ogcapi-common/build/tests/report.html> .
+
+_:N7a604434cc294da79f46200652fb5aa2 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.29" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

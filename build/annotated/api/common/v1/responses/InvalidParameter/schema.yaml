@@ -1,0 +1,8 @@
+description: General HTTP error response.
+content:
+  application/json:
+    schema:
+      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/exception/schema.yaml
+  text/html:
+    schema:
+      type: string

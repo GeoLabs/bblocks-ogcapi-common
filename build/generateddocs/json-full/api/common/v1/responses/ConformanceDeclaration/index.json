@@ -1,0 +1,38 @@
+
+
+{
+  "itemIdentifier": "ogc.api.common.v1.responses.ConformanceDeclaration",
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-06-11",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "conformance",
+    "response"
+  ],
+  "name": "Conformance Declaration Response",
+  "abstract": "This building block corresponds to the conformance declaration response from OGC API - Common - Part 1: Core",
+  "itemClass": "response",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.common.v1.schemas.confClasses"
+  ],
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/responses/ConformanceDeclaration/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ConformanceDeclaration/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-ogcapi-common/_sources/v1/responses/ConformanceDeclaration/",
+  "validationPassed": true,
+  "annotatedSchema": "description: 'The URIs of all conformance classes supported by the server.\n\n\n  To support \"generic\" clients that want to access multiple\n\n  OGC API implementations - and not \"just\" a specific\n\n  API / server, the server declares the conformance\n\n  classes it implements and conforms to.'\ncontent:\n  application/json:\n    schema:\n      $ref: https://geolabs.github.io/bblocks-ogcapi-common/build/annotated/api/common/v1/schemas/confClasses/schema.yaml\n    example:\n      conformsTo:\n      - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/core\n      - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/landingPage\n      - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/oas30\n      - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/html\n      - http://www.opengis.net/spec/ogcapi-common-1/1.0/conf/json\n  text/html:\n    schema:\n      type: string\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-ogcapi-common",
+  "gitPath": "_sources/v1/responses/ConformanceDeclaration"
+}
