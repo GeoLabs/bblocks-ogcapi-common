@@ -1,0 +1,14 @@
+get:
+  summary: This document
+  description: This document
+  tags:
+    - server
+  parameters:
+    - $ref: "bblocks://ogc.api.common.v1.parameters.f-openapi"
+  responses:
+    '200':
+      $ref: "bblocks://ogc.api.common.v1.responses.ApiDefinition"
+    '400':
+      $ref: "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+    default:
+      $ref: "bblocks://ogc.api.common.v1.responses.ServerError"

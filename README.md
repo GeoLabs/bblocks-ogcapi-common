@@ -1,17 +1,71 @@
-# OGC Building Block template
+# OGC API - Common - Part 1: Core Building Blocks
 
-This template provides a working example of an [OGC Building Block](https:blocks.ogc.org). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
+This repository contains Building Blocks for [OGC API - Common - Part 1: Core](https://docs.ogc.org/is/19-072/19-072.html).
 
-This template is a working automation recipe to define, test and document a set of Building Blocks.
+## Overview
 
-The automation-generated documentation for this example is here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
+OGC API - Common - Part 1: Core defines the fundamental building blocks that are common to all OGC API standards. This includes:
 
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
+- **Landing Page** (`/`) - The entry point for an API
+- **Conformance Declaration** (`/conformance`) - Declaration of conformance classes supported
+- **API Definition** (`/api`) - Machine-readable definition of the API (OpenAPI)
+- **Common Formats** - Support for JSON and HTML representations
+- **Common Schemas** - Links, exceptions, and other core data structures
 
-Please replace the contents of this README with information about your Building Block(s).
+## Structure
 
-# How to use this template
+The Building Blocks are organized as follows:
 
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
+```
+_sources/v1/
+├── api/              # Complete API definition
+├── paths/            # Path definitions (/, /conformance, /api)
+├── responses/        # Response definitions
+├── schemas/          # Schema definitions (landingPage, conformance, link, etc.)
+└── parameters/       # Common parameters
+```
+
+## Usage
+
+These Building Blocks can be referenced using the `bblocks://` URI scheme:
+
+```yaml
+paths:
+  /:
+    $ref: "bblocks://ogc.api.common.v1.paths.LandingPage"
+  /conformance:
+    $ref: "bblocks://ogc.api.common.v1.paths.Conformance"
+  /api:
+    $ref: "bblocks://ogc.api.common.v1.paths.ApiDefinition"
+```
+
+## Building Blocks
+
+### API Definition
+- **ogc.api.common.v1.api** - Complete OGC API - Common Part 1 API
+
+### Paths
+- **ogc.api.common.v1.paths.LandingPage** - Landing page path (`/`)
+- **ogc.api.common.v1.paths.Conformance** - Conformance declaration path (`/conformance`)
+- **ogc.api.common.v1.paths.ApiDefinition** - API definition path (`/api`)
+
+### Responses
+- **ogc.api.common.v1.responses.LandingPage** - Landing page response
+- **ogc.api.common.v1.responses.ConformanceDeclaration** - Conformance response
+- **ogc.api.common.v1.responses.ApiDefinition** - API definition response (OpenAPI)
+
+### Schemas
+- **ogc.api.common.v1.schemas.landingPage** - Landing page schema
+- **ogc.api.common.v1.schemas.confClasses** - Conformance classes schema
+- **ogc.api.common.v1.schemas.link** - Link object schema
+- **ogc.api.common.v1.schemas.exception** - Exception schema
+
+## Standards Reference
+
+- [OGC API - Common - Part 1: Core](https://docs.ogc.org/is/19-072/19-072.html)
+
+## License
+
+This repository is published under the [OGC Software License](http://www.ogc.org/legal/).
 
 

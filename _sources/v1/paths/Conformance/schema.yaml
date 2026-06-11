@@ -1,0 +1,17 @@
+get:
+  summary: API conformance definition
+  description: >-
+    A list of all conformance classes specified in a standard that the
+    server conforms to.
+  operationId: getConformanceDeclaration
+  tags:
+    - server
+  parameters:
+    - $ref: "bblocks://ogc.api.common.v1.parameters.f-openapi"
+  responses:
+    '200':
+      $ref: "bblocks://ogc.api.common.v1.responses.ConformanceDeclaration"
+    '400':
+      $ref: "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+    '500':
+      $ref: "bblocks://ogc.api.common.v1.responses.ServerError"

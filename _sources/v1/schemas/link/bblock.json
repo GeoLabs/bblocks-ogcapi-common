@@ -1,0 +1,21 @@
+{
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-06",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "link",
+    "schema"
+  ],
+  "name": "Link",
+  "abstract": "This building block corresponds to the link schema from OGC API - Common - Part 1: Core",
+  "itemClass": "schema"
+}

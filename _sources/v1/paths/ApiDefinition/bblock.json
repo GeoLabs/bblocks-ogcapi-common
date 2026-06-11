@@ -1,0 +1,25 @@
+{
+  "status": "under-development",
+  "dateTimeAddition": "2026-01-06T00:00:00.000000",
+  "register": "ogcapi-common",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-06",
+  "sources": [
+    {
+      "title": "OGC API - Common - Part 1: Core",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html"
+    },
+    {
+      "title": "OGC API - Common - Part 1: Core - OpenAPI 3.0 Requirements Class",
+      "link": "https://docs.ogc.org/is/19-072/19-072.html#_ab6e3c2d-d2dc-4f01-a7d4-8b52133289a0"
+    }
+  ],
+  "tags": [
+    "ogcapi-common",
+    "api-definition",
+    "path"
+  ],
+  "name": "API Definition Path",
+  "abstract": "This building block corresponds to the API definition path (/api) from OGC API - Common - Part 1: Core",
+  "itemClass": "path"
+}

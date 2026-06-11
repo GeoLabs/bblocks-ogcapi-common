@@ -1,0 +1,9 @@
+description: |-
+  General HTTP error response.
+content:
+  application/json:
+    schema:
+      $ref: "bblocks://ogc.api.common.v1.schemas.exception"
+  text/html:
+    schema:
+      type: string

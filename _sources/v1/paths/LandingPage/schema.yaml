@@ -1,0 +1,17 @@
+get:
+  summary: Landing page
+  description: >-
+    The landing page provides links to the API definition and the
+    conformance statements for this API.
+  operationId: getLandingPage
+  tags:
+    - server
+  parameters:
+    - $ref: "bblocks://ogc.api.common.v1.parameters.f-openapi"
+  responses:
+    '200':
+      $ref: "bblocks://ogc.api.common.v1.responses.LandingPage"
+    '400':
+      $ref: "bblocks://ogc.api.common.v1.responses.InvalidParameter"
+    '500':
+      $ref: "bblocks://ogc.api.common.v1.responses.ServerError"

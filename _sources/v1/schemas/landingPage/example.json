@@ -1,0 +1,30 @@
+{
+  "title": "Example OGC API",
+  "description": "This API provides access to geospatial data via OGC API standards",
+  "links": [
+    {
+      "href": "https://example.org/api",
+      "rel": "self",
+      "type": "application/json",
+      "title": "This document"
+    },
+    {
+      "href": "https://example.org/api?f=html",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "This document as HTML"
+    },
+    {
+      "href": "https://example.org/api/api",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi+json;version=3.0",
+      "title": "The OpenAPI definition"
+    },
+    {
+      "href": "https://example.org/api/conformance",
+      "rel": "conformance",
+      "type": "application/json",
+      "title": "OGC API conformance classes implemented by this server"
+    }
+  ]
+}

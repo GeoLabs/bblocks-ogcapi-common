@@ -1,0 +1,6 @@
+{
+  "href": "https://example.org/api",
+  "rel": "self",
+  "type": "application/json",
+  "title": "This document"
+}
